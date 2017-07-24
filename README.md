@@ -9,7 +9,7 @@
 * ReactJS
 * NodeJS
 
-## Authors
+## Author
 
 **Kathleen French** - [Portfolio](http://www.kathleenfrench.co)
 
