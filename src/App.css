@@ -245,7 +245,7 @@ html, body {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 200px;
-  height: 25px;
+  height: auto;
   padding-bottom: 13px;
 }
 
@@ -379,6 +379,8 @@ html, body {
   font-family: 'Roboto', sans-serif;
   width: 100%;
   height: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .note-form {
@@ -451,6 +453,7 @@ html, body {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   margin-top: 10px;
   border: none;
+  margin-bottom: 15px;
 }
 
 .note-button:focus {
@@ -475,6 +478,7 @@ html, body {
   width: 600px;
   height: auto;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .tag-button-container {
@@ -487,7 +491,7 @@ html, body {
   -webkit-flex-direction: row;
   flex-direction: row;
   font-size: 1.2em;
-  color: rgb(158, 158, 158);
+  color: #000;
   height: auto;
   min-width: 150px;
   white-space: nowrap;
@@ -662,7 +666,7 @@ html, body {
     -webkit-flex-direction: row;
     flex-direction: row;
     font-size: 1.2em;
-    color: rgb(158, 158, 158);
+    color: #212121;
     height: auto;
     min-width: 150px;
     white-space: nowrap;
@@ -670,7 +674,7 @@ html, body {
   }
 
   .tag-button {
-    background: rgb(158, 158, 158);
+    background: #212121;
     color: white;
     transition: all 0.2s ease-in;
     cursor: pointer;
