@@ -8,7 +8,7 @@ class Nav extends React.Component {
         return (
             <div className="nav-container">
                 <div className="nav-logo" >
-                   Note Taker
+                   Anon Recommends
                 </div>
 
                 <div 

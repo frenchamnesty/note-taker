@@ -1,6 +1,6 @@
 # Note Taker
 
-**Note Taker** is a web app that allows you to create, edit, and delete notes via a connection to a simple JSON API (built in Rails). [Access my code for that here!](https://github.com/frenchamnesty/notes)
+**Note Taker** is a web app that aggregates anonymous user recommendations. It allows users to create, edit, and delete notes using a simple JSON API built in Rails. [Access my code for that here!](https://github.com/frenchamnesty/notes)
 
 ![](https://github.com/frenchamnesty/note-taker/blob/master/note-taker.png)
 
