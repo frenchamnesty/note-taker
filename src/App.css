@@ -29,9 +29,8 @@ html, body {
   padding-bottom: 20px;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  /*font-family: 'Playfair Display', serif;*/
   font-family: 'Roboto Mono', monospace;
-  font-size: 2.5em;
+  font-size: 2.0em;
   letter-spacing: 0.6px;
 }
 
@@ -76,7 +75,6 @@ html, body {
 }
 
 /* nav.css */
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 
