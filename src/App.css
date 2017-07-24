@@ -246,7 +246,8 @@ html, body {
   flex-wrap: wrap;
   width: 200px;
   height: auto;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
+  margin-bottom: 3px;
 }
 
 .note-card-tag {

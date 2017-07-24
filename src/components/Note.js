@@ -78,7 +78,7 @@ class Note extends React.Component {
                     <input
                         className="note-title-input"
                         type="text"
-                        placeholder="Note Title..."
+                        placeholder="Enter Title..."
                         defaultValue={note.title}
                         ref={(input) => this.title = input }
                     />
