@@ -1,6 +1,6 @@
-# Note Taker
+# Anon Recommends
 
-**Note Taker** is a web app that aggregates anonymous user recommendations. It allows users to create, edit, and delete notes using a simple JSON API built in Rails. [Access my code for that here!](https://github.com/frenchamnesty/notes)
+**Anon Recommends** is a web app that aggregates anonymous user recommendations. It allows users to create, edit, and delete notes using a simple JSON API built in Rails. [Access my code for that here!](https://github.com/frenchamnesty/notes)
 
 ![](anon-recs.png)
 
