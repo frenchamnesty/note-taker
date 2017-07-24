@@ -5,7 +5,7 @@ class Note extends React.Component {
         e.preventDefault();
         const formData = {
             title: this.title.value,
-            content: this.title.value 
+            content: this.content.value 
         };
         this.props.submitNote(formData)
     }
