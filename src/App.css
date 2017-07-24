@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* html, body */
+html, body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+}
+
 /* flash.css */
 .flash-container {
   position: absolute;
@@ -15,7 +28,8 @@
   padding-bottom: 20px;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  font-family: 'Playfair Display', serif;
+  /*font-family: 'Playfair Display', serif;*/
+  font-family: 'Roboto Mono', monospace;
   font-size: 2.5em;
   letter-spacing: 0.6px;
 }
@@ -38,7 +52,7 @@
     padding-bottom: 10px;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Mono', monospace;
     font-size: 1.5em;
     letter-spacing: 0.6px;
   }
@@ -62,47 +76,66 @@
 
 /* nav.css */
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
 
 .nav-container {
   height: 60px;
-  background-color: rgb(228, 91, 91);
+  /*background-color: rgb(228, 91, 91); */
+  background-color: #212121;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  padding-left: 40px;
+  padding-left: 20px;
   padding-right: 40px;
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 0.6px;
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing: 0.2px;
+  opacity: 1;
+  transform: scale(1);
 }
 
 @keyframes move {
-    0%   {transform: rotate(-10deg);}
-    25%  {transform: rotate(10deg);}
-    50%  {transform: rotate(-10deg);}
-    75%  {transform: rotate(10deg);}
-    100% {margin-left: 0; transform: rotate(-10deg);}
+    0%   {transform: rotate(-2deg);}
+    25%  {transform: rotate(2deg);}
+    50%  {transform: rotate(-2deg);}
+    75%  {transform: rotate(2deg);}
+    100% {margin-left: 0; transform: rotate(-2deg);}
 }
 
 .nav-logo {
   color: white;
-  font-size: 2.5em;
+  letter-spacing: 1px;
+  line-height: 60px;
+  font-size: 1.5em;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
   float: left;
   cursor: pointer;
-  animation-name: move;
+  /*animation-name: move;*/
   animation-duration: 10s;
   animation-iteration-count: infinite;
+  vertical-align: middle;
+}
+
+.add-note {
+  font-size: 30px;
 }
 
 .nav-button {
-  font-family: 'Playfair Display', serif;
-  height: 40px;
-  width: 100px;
+  font-family: 'Roboto', sans-serif;
+  max-height: 25px;
+  vertical-align: middle;
+  width: auto;
   background: white;
-  color: rgb(228, 91, 91);
+  text-align: center;
+  color: #212121;
   float: right;
   font-size: 1.5em;
   margin-right: 10px;
-  margin-top: 6px;
+  margin-top: 15px;
   border-radius: 2px;
-  padding-top: 7px;
+  padding-bottom: 4px;
+  padding-right: 4px;
+  padding-left: 4px;
   transition: all 0.2s ease-in;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -116,11 +149,11 @@
 @media only screen and (max-width: 500px) {
   .nav-container {
     height: 60px;
-    background-color: rgb(228, 91, 91);
+    background-color: #212121;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     padding-left: 10px;
     padding-right: 10px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Mono', monospace;
     letter-spacing: 0.6px;
   }
 
@@ -136,11 +169,11 @@
   }
 
   .nav-button {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
     height: 30px;
     width: 80px;
     background: white;
-    color: rgb(228, 91, 91);
+    color: #212121;
     float: right;
     font-size: 1em;
     margin-top: 12px;
@@ -174,7 +207,7 @@
   text-align: left;
   overflow-x: hidden;
   overflow-y: hidden;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .note-card-container:hover {
@@ -186,7 +219,7 @@
 .note-card-title {
   width: 270px;
   color: white;
-  background: rgb(228, 91, 91);
+  background: #212121;
   position: absolute;
   top: 0;
   left: 0;
@@ -248,7 +281,7 @@
   position: absolute;
   left: 10px;
   bottom: 10px;
-  background: rgb(228, 91, 91);
+  background: #212121;
   color: white;
   border-radius: 100%;
   width: 25px;
@@ -263,7 +296,7 @@
 }
 
 .note-card-delete:hover {
-  background: rgb(198, 79, 79);
+  background: #212121;
   color: white;
   box-shadow: 0 -3px 9px rgba(0,0,0,0.12), 0 -3px 6px rgba(0,0,0,0.24);
   transform: rotate(180deg);
@@ -274,7 +307,7 @@
   position: absolute;
   right: 10px;
   bottom: 10px;
-  color: rgb(228, 91, 91);
+  color: #212121;
   border-radius: 100%;
   width: 25px;
   height: 25px;
@@ -288,7 +321,7 @@
 }
 
 .note-card-edit:hover {
-  color: rgb(198, 79, 79);
+  color: #212121;
   text-shadow: 0 6px 15px rgba(0,0,0,0.12), 0 6px 12px rgba(0,0,0,0.24);
   transform: rotate(90deg);
 }
@@ -317,7 +350,7 @@
     text-align: left;
     overflow-x: hidden;
     overflow-y: hidden;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Mono', monospace;
   }
 
   .note-card-container:hover {
@@ -326,9 +359,6 @@
     margin-bottom: 20px;
   }
 }
-
-/*note.css */
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 .note-container {
   display: -webkit-flex;
@@ -343,7 +373,7 @@
   -webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   position: relative;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
   width: 100%;
   height: auto;
 }
@@ -364,10 +394,10 @@
   border: none;
   font-size: 1.5em;
   text-align: center;
-  border-bottom: 2px solid rgb(228, 91, 91);
-  font-family: 'Playfair Display', serif;
+  border-bottom: 2px solid #212121;
+  font-family: 'Roboto Mono', monospace;
   width: 600px;
-  background-color: rgb(228, 91, 91);
+  background-color: #212121;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
@@ -394,7 +424,7 @@
   margin-bottom: 10px;
   margin-top: 0;
   border-radius: none;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -405,10 +435,10 @@
 }
 
 .note-button {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
   height: 40px;
   width: 100px;
-  background: rgb(228, 91, 91);
+  background: #212121;
   color: white;
   float: right;
   font-size: 1.5em;
@@ -425,7 +455,7 @@
 }
 
 .note-button:hover {
-  background: rgb(198, 79, 79);
+  background: #212121;
   box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
 }
 
@@ -486,7 +516,7 @@
   width: 120px;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .tag-input:focus {
@@ -558,9 +588,9 @@
     border: none;
     font-size: 1.5em;
     text-align: center;
-    border-bottom: 2px solid rgb(228, 91, 91);
-    font-family: 'Playfair Display', serif;
-    background-color: rgb(228, 91, 91);
+    border-bottom: 2px solid #212121;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #212121;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
@@ -579,17 +609,17 @@
     margin-bottom: 10px;
     margin-top: 0;
     border-radius: none;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
   }
 
   .note-button {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
     height: 40px;
     width: 100px;
-    background: rgb(228, 91, 91);
+    background: #212121;
     color: white;
     float: right;
     font-size: 1.5em;
@@ -601,7 +631,7 @@
   }
 
   .note-button:hover {
-    background: rgb(198, 79, 79);
+    background: #212121;
     box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
   }
 
@@ -661,7 +691,7 @@
     width: 120px;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Mono', monospace;
   }
 
   .tag-input:focus {
@@ -733,10 +763,10 @@
     border: none;
     font-size: 1.2em;
     text-align: center;
-    border-bottom: 2px solid rgb(228, 91, 91);
-    font-family: 'Playfair Display', serif;
+    border-bottom: 2px solid #212121;
+    font-family: 'Roboto Mono', monospace;
     width: 290px;
-    background-color: rgb(228, 91, 91);
+    background-color: #212121;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
@@ -755,17 +785,17 @@
     margin-bottom: 10px;
     margin-top: 0;
     border-radius: none;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
   }
 
   .note-button {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
     height: 40px;
     width: 100px;
-    background: rgb(228, 91, 91);
+    background:#212121;
     color: white;
     float: right;
     font-size: 1.5em;
@@ -777,7 +807,7 @@
   }
 
   .note-button:hover {
-    background: rgb(198, 79, 79);
+    background: #212121;
     box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
   }
 
@@ -837,7 +867,7 @@
     width: 120px;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
   }
 
   .tag-input:focus {
