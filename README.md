@@ -4,8 +4,6 @@
 
 ![](anon-recs.png)
 
-![](https://github.com/frenchamnesty/note-taker/blob/master/note-taker.png)
-
 ## Built With
 
 * ReactJS
