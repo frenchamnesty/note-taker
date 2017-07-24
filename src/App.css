@@ -948,3 +948,18 @@ html, body {
     opacity: 1;
   }
 }
+
+.footer-container {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+
+#inline-footer {
+  display: inline;
+}
+
+a#inline-footer {
+  color: inherit;
+}

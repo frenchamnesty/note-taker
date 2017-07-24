@@ -120,6 +120,9 @@ class App extends Component {
             deleteNote={this.deleteNote}
            /> 
         }
+        <div className="footer-container">
+         <p id="inline-footer">&copy; </p><a id="inline-footer" href="http://www.kathleenfrench.co">kathleen french</a><p id="inline-footer"> | 2017</p>
+        </div>
       </div>
     );
   }
