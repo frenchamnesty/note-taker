@@ -8,7 +8,9 @@ class Nav extends React.Component {
         return (
             <div className="nav-container">
                 <div className="nav-logo" >
-                   Anon Recommends
+                    <i className="anon-icon material-icons">person_outline</i>
+                   <span>
+                   Anon Recommends</span>
                 </div>
 
                 <div 

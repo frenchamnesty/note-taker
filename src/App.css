@@ -110,10 +110,14 @@ html, body {
   float: left;
   font-weight: 100;
   cursor: pointer;
-  /*animation-name: move;*/
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
   vertical-align: middle;
+}
+
+.anon-icon {
+  padding-right: 10px;
+  padding-top: 15px;
+  font-size: 30px;
+  float: left;
 }
 
 .add-note {
@@ -162,23 +166,20 @@ html, body {
     font-size: 2em;
     float: left;
     cursor: pointer;
-    animation-name: move;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
     padding-top: 5px;
   }
 
   .nav-button {
     font-family: 'Roboto', sans-serif;
     height: 30px;
-    width: 80px;
+    width: auto;
     background: white;
     color: #212121;
     float: right;
     font-size: 1em;
     margin-top: 12px;
     border-radius: 2px;
-    padding-top: 7px;
+    padding-top: 5px;
     transition: all 0.2s ease-in;
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
